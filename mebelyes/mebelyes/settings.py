@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['workro7d.beget.tech', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'main',
+    'api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

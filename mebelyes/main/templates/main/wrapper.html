@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Интернет-магазин мебели</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container-fluid sticky-top">
+    <div class="row">
+        <div class="d-lg-block d-xl-block col-lg-2 px-0 left-space"></div>
+        <div class="col-lg-8 px-0">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark ">
+                
+                <a href="/cart" class="d-lg-none" style="color:white; font-size:32px;"><i class="fas fa-shopping-cart mr-3"></i></a>
+                
+                <a class="navbar-brand" href="/"><img src="{% static 'main/img/LOGO-1.png' %}" alt="Mebelyes"></a>
+                
+              	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="navbar-toggler-icon"></span>
+              	</button>
+            
+              	<div class="collapse navbar-collapse" id="navbar1">
+                	<ul class="navbar-nav mr-auto ml-lg-5">
+                  		<li class="nav-item active">
+                    		<a class="nav-link" href="#">Контакты</a>
+                  		</li>
+            		    <li class="nav-item dropdown" id="popup-h">
+                    		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О нас</a>
+                    		<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#popap" >Доставка</a>
+                      			<div class="dropdown-divider"></div>
+                      			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#popap" >Безопасность</a>
+                      			<div class="dropdown-divider"></div>
+                      			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#popap" >Оплата</a>
+                    		</div>
+                  		</li>
+                  		<li class="nav-item dropdown">
+                    		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                    		<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      			<a class="dropdown-item" href="#">Кровати</a>
+                      			<div class="dropdown-divider"></div>
+                      			<a class="dropdown-item" href="#">Тахта</a>
+                      			<div class="dropdown-divider"></div>
+                      			<a class="dropdown-item" href="#">Шкафы</a>
+                      			<div class="dropdown-divider"></div>
+                      			<a class="dropdown-item" href="#">Тумбы</a>
+                      			<div class="dropdown-divider"></div>
+                      			<a class="dropdown-item" href="#">Детская</a>
+                      			
+                    		</div>
+                  		</li>
+                	</ul>
+                	<!--<form class="form-inline my-2 mr-5">
+                  		<input class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search">
+                  		<button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                	</form>-->
+              	</div>
+              	    
+              	    
+              	    
+                	<a href="/cart" class="d-none d-lg-block d-xl-block" style="color:white; font-size:32px;"><i class="fas fa-shopping-cart"></i></a>
+              	
+            </nav>
+        </div>
+        <div  class="d-lg-block d-xl-block col-lg-2 px-0 right-space"></div>
+    </div>
+</div>
+
+<br>
+{% block content %}
+{% endblock %}
+<br>
+
+<footer >
+    <div class="container-fluid centered">
+        <div class="row">
+            <div class="d-lg-block d-xl-block col-lg-2 px-0 left-space"></div>
+            <div id="footer" class="col-xs-12 col-lg-8 ">
+                <div class="container">
+                    <div class="row my-2">
+                        <div class="col-lg-4">
+                            <a href="https://www.instagram.com/mebelyes/" class="fab fa-instagram social-icons"></a>
+                            <a href="https://vk.com/mebelyess" class="fab fa-vk social-icons"></a>
+                            <a href="404.html" class="fab fa-facebook-f social-icons"></a>
+                            <a href="404.html" class="fab fa-telegram social-icons"></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="my-0" href="tel:+7 977 112-78-73"><h4>+7 977 112-78-73</h4></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="my-0">help@mebelyes.store</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-block d-xl-block col-lg-2 px-0 right-space"></div>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+   document.querySelectorAll('img').forEach(function(img){
+  	img.onerror = function(){this.src="{% static 'main/img/noimage.jpg' %}";};
+   })
+});
+</script>
+
+</body>
+</html>
+
+
