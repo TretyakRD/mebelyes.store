@@ -1,0 +1,28 @@
+{% extends 'main/wrapper.html' %}
+{% block content %}
+    {% load staticfiles %}
+    <script>
+        window.get_url = "{{ GetProductURL }}";
+    </script>
+    <div class="container bg-white p-5" id="app">
+        <div class="row">
+            <div class="col-6">
+                <img :src="img_url" alt="картинка" class="img-thumbnail">
+            </div>
+            <div class="col-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2 class="text-center">[[ name ]]</h2>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="btn-group" id="material">
+                            <button v-for="(mat, i) in materials" type="button" class="btn btn-outline-secondary" :id="i" @click="toggle('material', i)">[[mat]]</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'main/js/GetProduct.js' %}"></script>
+{% endblock %}
