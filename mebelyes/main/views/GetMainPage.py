@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def GetMainPage(request):
-    return render(request, 'main/MainPage.html')
+    return render(request, 'main/GetMainPage.html')

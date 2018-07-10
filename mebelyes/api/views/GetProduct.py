@@ -5,3 +5,5 @@ from django.http import HttpResponse
 
 def GetProduct(request):
     return HttpResponse('OK')
+
+

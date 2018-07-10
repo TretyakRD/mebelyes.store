@@ -17,13 +17,17 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: "Comfortaa";
     font-weight: 300;
-    color: #fff;
 }
 h6{
     font-size: 12px;
     text-decoration: underline;
     color: #7b7b7b;
 }
+
+.tc-w{
+    color:white;
+}
+
 .h5-p{
     font-size: 20px;
     font-weight: 600;
@@ -44,13 +48,6 @@ h6{
 p{
     line-height: 28px;
     margin-bottom: 25px;
-}
-.centered{
-    text-align: center;
-}
-
-a {
-    color: #f85c37;
 }
 
 a:hover, a:focus{

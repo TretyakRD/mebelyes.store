@@ -1,0 +1,11 @@
+{% extends 'main/wrapper.html' %}
+{% block content %}
+    {% load staticfiles %}
+    <script>
+        window.get_url = "{{ GetCategoryURL }}";
+    </script>
+    <div class="container-fluid" id="app">
+
+    </div>
+    <script src="{% static 'main/js/GetCategory.js' %}"></script>
+{% endblock %}
