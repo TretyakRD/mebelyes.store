@@ -1,5 +1,6 @@
-from django.http import JsonResponse, HttpResponse
 import json
+
+from django.http import JsonResponse, HttpResponse
 from ..models import Product
 
 
@@ -9,20 +10,18 @@ def GetCategory(request):
 
         category = request.GET.get('category')
 
-        products = Product.objects.filter(category=category)
+        products = Product.objects.filter(category=category).values('id', 'name', 'prices', 'img_url');
+
+
 
         data = []
 
         for p in products:
             data.append({
-                'name': p.name,
-                'slug': p.slug,
-                'prices': p.prices,
-                'description': p.description,
-                'category': p.category,
-                'material': p.material,
-                'sizes': p.sizes,
-                'img_url': p.img_url,
+                'id': p['id'],
+                'name': p['name'],
+                'start_price': json.loads(p['prices'])[0][0],
+                'img_url': p['img_url'],
             })
 
         return JsonResponse(data, safe=False)
