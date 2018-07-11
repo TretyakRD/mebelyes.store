@@ -1,0 +1,51 @@
+{% extends 'main/wrapper.html' %}
+{% block content %}
+    {% load staticfiles %}
+    <script>
+        window.cart = "{{ cart | safe }}";
+        window.total_price = {{ total_price }};
+    </script>
+    <div class="container-fluid" id="app">
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 bg-white">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="table-responsive">
+                            {% csrf_token %}
+                            <table class="table table-striped">
+                                <thead>
+                                <th>Имя</th>
+                                <th>Материал</th>
+                                <th>Цвет</th>
+                                <th>Размер</th>
+                                <th>Цена</th>
+                                <th></th>
+                                </thead>
+                                <tbody>
+                                <tr v-for="prod in cart" is="productincart"
+                                    :id="prod.id"
+                                    :name="prod.name"
+                                    :material="prod.material"
+                                    :color="prod.color"
+                                    :size="prod.size"
+                                    :price="prod.price"
+
+                                ></tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Итого:</td>
+                                    <td>[[ total_price ]]</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'cart/js/GetCart.js' %}"></script>
+{% endblock %}

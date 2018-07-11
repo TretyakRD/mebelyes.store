@@ -14,6 +14,18 @@ body{
 
 }
 
+a h5{
+    text-decoration: none;
+    color: #222!important;
+    font-weight: 600!important;
+}
+
+a h5:hover{
+    text-decoration: none;
+    color: #222!important;
+    font-weight: 600!important;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: "Comfortaa";
     font-weight: 300;

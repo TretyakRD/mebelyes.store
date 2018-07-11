@@ -6,18 +6,66 @@
     </script>
     <div class="container bg-white p-5" id="app">
         <div class="row">
-            <div class="col-6">
-                <img :src="img_url" alt="картинка" class="img-thumbnail">
+            <div class="col-12 col-md-6">
+                <img :src="'/static/'+img_url" alt="картинка" class="img-thumbnail">
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="container-fluid">
                     <div class="row">
                         <h2 class="text-center">[[ name ]]</h2>
                     </div>
                     <hr>
+                    <div class="row" id="material">
+                        <div v-for="(mat, i) in materials" class="col-12 col-md-3 px-0">
+                            <button type="button" class="btn btn-outline-secondary btn-block" :name="i"
+                                    @click="toggle('material', i)">[[mat]]
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" id="size">
+                        <div v-for="(size, i) in sizes" class="col-12 col-md-3 px-0">
+                            <button type="button" class="btn btn-outline-secondary btn-block" :name="i"
+                                    @click="toggle('size', i)">[[size]]
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row " id="color">
+                        <div v-for="(color, i) in colors" class="col-6 col-md-3 px-0">
+                            <button type="button" class="btn btn-outline-secondary btn-block" :name="i"
+                                    @click="toggle('color', i)">[[color]]
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-12 col-md-6 text-right pt-5">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="btn-group" id="material">
-                            <button v-for="(mat, i) in materials" type="button" class="btn btn-outline-secondary" :id="i" @click="toggle('material', i)">[[mat]]</button>
+
+                        <div class="col-12 col-md-6">
+                            <form action="/cart/add" method="post" v-on:submit.prevent="add_to_cart">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-block btn-success py-3" >В корзину</button>
+                                            <div class="d-none">
+                                                [[ cur_material ]]
+                                                [[ cur_size ]]
+                                                [[ cur_color ]]
+                                                <input name="material" v-bind:value="cur_material">
+                                                <input name="size" v-bind:value="cur_size">
+                                                <input name="color" v-bind:value="cur_color">
+                                                <input name="id" v-bind:value="id">
+                                            </div>
+                                        </form>
+                        </div>
+                        <div class="col-12 col-md-6 pt-2">
+                            <h4>Цена: [[price]] ₽</h4>
                         </div>
                     </div>
                 </div>

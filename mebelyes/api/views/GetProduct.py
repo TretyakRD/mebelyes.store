@@ -8,7 +8,7 @@ def GetProduct(request):
 
         idd = request.GET.get('id')
 
-        product = Product.objects.filter(id=idd).values('id', 'name', 'prices', 'img_url', 'sizes', 'material')
+        product = Product.objects.filter(id=idd).values('id', 'name', 'prices', 'img_url', 'sizes', 'material','category')
 
         data = []
 
@@ -20,6 +20,7 @@ def GetProduct(request):
                 'img_url': p['img_url'],
                 'sizes': p['sizes'],
                 'material': p['material'],
+                'category': p['category'],
             });
 
         return JsonResponse(data, safe=False)
