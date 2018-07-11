@@ -28,6 +28,11 @@ Vue.component('serv', {
                 this.$parent.price-=Number(this.price);
         },
     },
+    created: function () {
+      if(!(window.addsrvc))
+          window.addsrvc=[]
+        window.addsrvc.push(this)
+    },
         template: `
         <tr>
             <td>
@@ -88,9 +93,11 @@ vm = new Vue({
             this.price = this.prices[this.cur_material][this.cur_size];
         },
         add_to_cart: function () {
-            vm = this
+            vm = this;
+            let srcs_arr=[];
+            window.addsrvc.forEach(el=>{if(el.active)srcs_arr.push(el.service.id)});
             if (this.price != 0) {
-                var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+                let csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
                 jQuery.post("/cart/add", {
                     csrfmiddlewaretoken: csrftoken,
                     material: vm.materials.indexOf(vm.cur_material),
@@ -99,6 +106,7 @@ vm = new Vue({
                     category: this.category,
                     id: this.id,
                     name: this.name,
+                    services: srcs_arr.toString(),
                 }, function (data) {
                     console.log(data);
                 });

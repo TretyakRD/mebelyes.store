@@ -9,6 +9,8 @@ def RemoveFromCart(request):
             'size'] == request.POST.get('num[size]') and pt['material'] == request.POST.get('num[material]') and pt[
             'color'] == request.POST.get('num[color]'):
             total_price -= int(pt['price'])
+            for i in pt['services']:
+                total_price -= int(i['price'])
             cart.remove(pt)
             break
     request.session['cart'] = cart

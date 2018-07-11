@@ -12,35 +12,33 @@
                     <div class="row">
                         <div class="table-responsive">
                             {% csrf_token %}
-                            <table class="table table-striped">
-                                <thead>
-                                <th>Имя</th>
-                                <th>Материал</th>
-                                <th>Цвет</th>
-                                <th>Размер</th>
-                                <th>Цена</th>
-                                <th></th>
-                                </thead>
-                                <tbody>
-                                <tr v-for="prod in cart" is="productincart"
+                            <div class="container-fluid table table-striped">
+                                <div class="row py-3 border">
+                                    <div class="col-2">Название</div>
+                                    <div class="col-2">Материал</div>
+                                    <div class="col-2">Цвет</div>
+                                    <div class="col-2">Размер</div>
+                                    <div class="col-2">Цена</div>
+                                    <div class="col-2"></div>
+                                </div>
+                                <productincart v-for="prod in cart"
                                     :id="prod.id"
                                     :name="prod.name"
                                     :material="prod.material"
                                     :color="prod.color"
                                     :size="prod.size"
                                     :price="prod.price"
-
-                                ></tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Итого:</td>
-                                    <td>[[ total_price ]]</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                                    :services="prod.services"
+                                ></productincart>
+                                <div class="row py-4 border">
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2">Цена:</div>
+                                    <div class="col-2">[[ total_price ]]</div>
+                                    <div class="col-2"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
