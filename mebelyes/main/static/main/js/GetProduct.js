@@ -1,7 +1,55 @@
+Vue.component('serv', {
+        props: ['service'],
+        data: function(){
+            return{
+                price: 0,
+                disable: true,
+                active: false,
+            }
+        },
+    methods:{
+        set_price: function () {
+            if(this.active){
+                this.toggle()
+            }
+            this.price = this.service.prices[this.$parent.cur_material][this.$parent.cur_size];
+            if(this.price){
+                this.disable=false;
+            }else{
+                this.disable = true;
+                this.active = false;
+            }
+        },
+        toggle: function () {
+            this.active = !this.active
+            if (this.active)
+                this.$parent.price+=Number(this.price);
+            else
+                this.$parent.price-=Number(this.price);
+        },
+    },
+        template: `
+        <tr>
+            <td>
+                [[ service.description ]]
+            </td>
+            <td>
+                [[ price ]] ₽
+            </td>
+            <td>
+                <button class="btn btn-outline-secondary rounded-circle border-white p-1" style="height:50px; width:50px " :disabled="disable" :class="{active : active}" @click="toggle"><i style="font-size:25px" class="far fa-check-circle text-center align-middle"></i></button>
+            </td>
+        </tr>
+    `,
+        delimiters: ['[[', ']]'],
+    }
+);
+
+
 vm = new Vue({
     el: "#app",
     data: {
-        id:'',
+        id: '',
         name: '',
         prices: [],
         sizes: [],
@@ -11,9 +59,10 @@ vm = new Vue({
         cur_material: '',
         cur_size: '',
         cur_color: '',
-        category:'',
+        category: '',
         cur_price: '',
         price: 0,
+        services: [],
     },
     methods: {
         toggle: function (g_id, b_name) {
@@ -33,15 +82,16 @@ vm = new Vue({
             this.set_price();
         },
         set_price: function () {
-
-                this.price = this.prices[this.cur_material][this.cur_size];
-
+            this.$children.forEach(el=>{
+                el.set_price()
+            });
+            this.price = this.prices[this.cur_material][this.cur_size];
         },
         add_to_cart: function () {
             vm = this
-            if(this.price!=0){
+            if (this.price != 0) {
                 var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
-                jQuery.post("/cart/add",{
+                jQuery.post("/cart/add", {
                     csrfmiddlewaretoken: csrftoken,
                     material: vm.materials.indexOf(vm.cur_material),
                     size: vm.sizes.indexOf(vm.cur_size),
@@ -49,7 +99,7 @@ vm = new Vue({
                     category: this.category,
                     id: this.id,
                     name: this.name,
-                }, function(data){
+                }, function (data) {
                     console.log(data);
                 });
             }
@@ -63,11 +113,15 @@ vm = new Vue({
             console.log(data);
             vm.id = data[0].id;
             vm.name = data[0].name;
-            vm.prices = JSON.parse(data[0].prices.replace(/'/gi,'"'));
-            vm.sizes = JSON.parse(data[0].sizes.replace(/'/gi,'"'));
-            vm.materials = JSON.parse(data[0].material.replace(/'/gi,'"'));
+            vm.prices = JSON.parse(data[0].prices.replace(/'/gi, '"'));
+            vm.sizes = JSON.parse(data[0].sizes.replace(/'/gi, '"'));
+            vm.materials = JSON.parse(data[0].material.replace(/'/gi, '"'));
             vm.img_url = data[0].img_url;
             vm.category = data[0].category;
+            vm.services = data[0].services;
+            vm.services.forEach(el => {
+                el.prices = JSON.parse(el.prices);
+            })
         });
     },
     delimiters: ['[[', ']]'],
