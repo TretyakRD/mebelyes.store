@@ -10,6 +10,6 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Service)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['id', 'category', 'description']
+    list_display = ['id', 'slug', 'description']
     list_display_links = list_display
-    list_filter = ['category']
+    list_filter = ['slug']
