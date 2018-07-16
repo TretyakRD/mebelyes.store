@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['workro7d.beget.tech', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'cart_order',
     'cart',
     'main',
     'api',
@@ -119,5 +120,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+
+EMAIL_HOST = 'smtp.beget.com'
+EMAIL_HOST_USER = 'orders@mebelyes.store'
+EMAIL_HOST_PASSWORD = '1aY&5j62'
 
 STATIC_URL = '/static/'

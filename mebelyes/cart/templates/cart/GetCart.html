@@ -31,12 +31,20 @@
                                     :services="prod.services"
                                 ></productincart>
                                 <div class="row py-4 border">
-                                    <div class="col-2"></div>
+                                    <div class="col-2"><button class="btn btn-block btn-outline-danger" @click="CleanCart">Очистить</button></div>
                                     <div class="col-2"></div>
                                     <div class="col-2"></div>
                                     <div class="col-2">Цена:</div>
                                     <div class="col-2">[[ total_price ]]</div>
                                     <div class="col-2"></div>
+                                </div>
+                                <div class="row py-4 border">
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3"><a href="{% url 'cart_order:New' %}" class="btn btn-block btn-outline-success">Оформить заказ</a></div>
+                                    <div class="col-1"></div>
                                 </div>
                             </div>
                         </div>

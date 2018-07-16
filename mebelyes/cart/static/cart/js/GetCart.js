@@ -5,6 +5,12 @@ Vue.component('productincart', {
             active: true,
         }
     },
+    created: function () {
+      if(!window.prods){
+          window.prods=[]
+      }
+      window.prods.push(this)
+    },
     methods:{
         remove_cart: function () {
             this.active = false;
@@ -78,7 +84,18 @@ vm = new Vue({
         this.total_price = window.total_price;
     },
     methods: {
-
+        CleanCart: function () {
+            this.total_price=0;
+            window.prods.forEach(el=>{
+               el.active=false;
+            });
+            let csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+            jQuery.post("/cart/clean",{
+                csrfmiddlewaretoken: csrftoken,
+            }, function(data){
+                console.log(data);
+            });
+        }
     },
     delimiters: ['[[', ']]'],
 });
