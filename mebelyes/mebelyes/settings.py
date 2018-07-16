@@ -25,7 +25,7 @@ SECRET_KEY = '$z@gnok#dc2ob!q1-4!f$rc$t^^qk^@)p)wud^)2cvfgs-vlnd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['workro7d.beget.tech', '127.0.0.1']
+ALLOWED_HOSTS = ['workro7d.beget.tech', '127.0.0.1', 'mebelyes.store']
 
 
 # Application definition
