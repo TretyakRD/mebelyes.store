@@ -4,7 +4,7 @@
     <script>
         window.get_url = "{{ GetProductURL }}";
     </script>
-    <div class="container bg-white p-5" id="app">
+    <div class="container bg-white p-3" id="app">
         <div class="row">
             <div class="col-12 col-md-6">
                 <img :src="'/static/'+img_url" alt="картинка" class="img-thumbnail">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-3">
             <table class="table">
                     <tr is="serv"
                             v-for="sc in services"
@@ -71,7 +71,7 @@
                                             </div>
                                         </form>
                         </div>
-                        <div class="col-12 col-md-6 pt-2">
+                        <div class="col-12 col-md-6 pt-3">
                             <h4>Цена: [[price]] ₽</h4>
                         </div>
                     </div>

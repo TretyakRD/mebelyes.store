@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="28cc44c4-dd51-4df5-8214-d004cbfcd166" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mebelyes/main/templates/main/GetCategory.html" afterPath="$PROJECT_DIR$/mebelyes/main/templates/main/GetCategory.html" />
+      <change beforePath="$PROJECT_DIR$/mebelyes/db.sqlite3" afterPath="$PROJECT_DIR$/mebelyes/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js" afterPath="$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js" />
       <change beforePath="$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html" afterPath="$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,29 +51,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetProduct.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js">
+      <file leaf-file-name="GetProduct.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1734">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1531726856894" expanded="true" signature="1009:1479" ph="..." />
-                <marker date="1531726856894" expanded="true" signature="1026:1086" ph="..." />
-                <marker date="1531726856894" expanded="true" signature="1103:1151" ph="..." />
-                <marker date="1531726856894" expanded="true" signature="1168:1465" ph="..." />
-                <marker date="1531726856894" expanded="false" signature="1267:1291" ph="..." />
-                <marker date="1531726856894" expanded="false" signature="1366:1380" ph="..." />
-              </folding>
+            <state relative-caret-position="782">
+              <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetProduct.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html">
+      <file leaf-file-name="GetProduct.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="97" lean-forward="false" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
-              <folding />
+            <state relative-caret-position="257">
+              <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding>
+                <marker date="1531812185734" expanded="true" signature="1009:1521" ph="..." />
+                <marker date="1531812185734" expanded="true" signature="1047:1107" ph="..." />
+                <marker date="1531812185734" expanded="true" signature="1145:1193" ph="..." />
+                <marker date="1531812185734" expanded="true" signature="1210:1507" ph="..." />
+                <marker date="1531812185734" expanded="false" signature="1309:1333" ph="..." />
+                <marker date="1531812185734" expanded="false" signature="1408:1422" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,6 +180,7 @@
         <option value="$PROJECT_DIR$/mebelyes/api/models/Service.py" />
         <option value="$PROJECT_DIR$/mebelyes/main/templates/main/GetCategory.html" />
         <option value="$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html" />
+        <option value="$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js" />
       </list>
     </option>
   </component>
@@ -221,57 +223,6 @@
               <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
               <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
               <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mebelyes_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mebelyes_store" type="462c0819:PsiDirectoryNode" />
-              <item name="mebelyes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531810938835</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="decoration fixes">
+      <created>1531811336714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531811336715</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -377,7 +335,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22860636" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22860636" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -396,15 +354,16 @@
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@mebelyes_store" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22860636" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -412,8 +371,8 @@
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +385,8 @@
     <MESSAGE value="add order page and some new func in cart page" />
     <MESSAGE value="fix" />
     <MESSAGE value="added shelfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added shelfs" />
+    <MESSAGE value="decoration fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="decoration fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -880,26 +840,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js">
+    <entry file="file://$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1734">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1531726856894" expanded="true" signature="1009:1479" ph="..." />
-            <marker date="1531726856894" expanded="true" signature="1026:1086" ph="..." />
-            <marker date="1531726856894" expanded="true" signature="1103:1151" ph="..." />
-            <marker date="1531726856894" expanded="true" signature="1168:1465" ph="..." />
-            <marker date="1531726856894" expanded="false" signature="1267:1291" ph="..." />
-            <marker date="1531726856894" expanded="false" signature="1366:1380" ph="..." />
-          </folding>
+        <state relative-caret-position="782">
+          <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mebelyes/main/templates/main/GetProduct.html">
+    <entry file="file://$PROJECT_DIR$/mebelyes/main/static/main/js/GetProduct.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="97" lean-forward="false" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
-          <folding />
+        <state relative-caret-position="257">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <marker date="1531812185734" expanded="true" signature="1009:1521" ph="..." />
+            <marker date="1531812185734" expanded="true" signature="1047:1107" ph="..." />
+            <marker date="1531812185734" expanded="true" signature="1145:1193" ph="..." />
+            <marker date="1531812185734" expanded="true" signature="1210:1507" ph="..." />
+            <marker date="1531812185734" expanded="false" signature="1309:1333" ph="..." />
+            <marker date="1531812185734" expanded="false" signature="1408:1422" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
