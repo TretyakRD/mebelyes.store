@@ -35,10 +35,10 @@ Vue.component('serv', {
     },
         template: `
         <tr>
-            <td>
+            <td class="align-middle">
                 [[ service.description ]]
             </td>
-            <td>
+            <td class="align-middle">
                 [[ price ]] ₽
             </td>
             <td>
