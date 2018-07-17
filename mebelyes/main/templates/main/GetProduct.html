@@ -17,7 +17,7 @@
                     <hr>
                     <div class="row" id="material">
                         <div v-for="(mat, i) in materials" class="col-12 col-md-3 px-0">
-                            <button type="button" class="btn btn-outline-secondary btn-block" :name="i"
+                            <button type="button" class="btn btn-outline-secondary btn-block px-1" :name="i"
                                     @click="toggle('material', i)">[[mat]]
                             </button>
                         </div>
@@ -25,7 +25,7 @@
                     <hr>
                     <div class="row" id="size">
                         <div v-for="(size, i) in sizes" class="col-12 col-md-3 px-0">
-                            <button type="button" class="btn btn-outline-secondary btn-block" :name="i"
+                            <button type="button" class="btn btn-outline-secondary btn-block px-1" :name="i"
                                     @click="toggle('size', i)">[[size]]
                             </button>
                         </div>
@@ -33,7 +33,7 @@
                     <hr>
                     <div class="row " id="color">
                         <div v-for="(color, i) in colors" class="col-6 col-md-3 px-0">
-                            <button type="button" class="btn btn-outline-secondary btn-block" :name="i"
+                            <button type="button" class="btn btn-outline-secondary btn-block px-1" :name="i"
                                     @click="toggle('color', i)">[[color]]
                             </button>
                         </div>
