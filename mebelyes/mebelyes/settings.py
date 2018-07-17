@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['workro7d.beget.tech', '127.0.0.1', 'mebelyes.store']
 # Application definition
 
 INSTALLED_APPS = [
+    'map',
     'cart_order',
     'cart',
     'main',
