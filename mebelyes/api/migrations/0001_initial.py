@@ -30,9 +30,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('description', models.CharField(max_length=256)),
-                ('cond', models.CharField(max_length=256)),
+                ('slug', models.CharField(max_length=256)),
                 ('price', models.CharField(max_length=256)),
-                ('category', models.CharField(max_length=256)),
             ],
         ),
         migrations.AddField(
