@@ -14,12 +14,14 @@ vm = new Vue({
             $.ajax({
                 url: "/map/calcdelv",
                 data:{
-                    from:"Муром",
+                    from:"Россия Москва ул. Софийская набережная 26/1",
                     to: vm.country+" "+vm.city+" "+vm.street+" "+vm.building,
                 },
             }).then(function (dist) {
                 if(dist!=="-1")
-                    vm.dist = Number(dist.replace(/ /gi, ''))
+                    vm.dist = Number(dist.replace(/ /gi, '').replace(/,/gi, '.'))
+                if(vm.dist<30)
+                    vm.dist=0
             });
         }
     },
