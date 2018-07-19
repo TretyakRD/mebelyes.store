@@ -128,4 +128,4 @@ EMAIL_HOST_PASSWORD = '1aY&5j62'
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "../static"
+STATIC_ROOT = "./static"
