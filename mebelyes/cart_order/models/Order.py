@@ -15,11 +15,11 @@ class Order(models.Model):
         send_mail(
             'Новый заказ!',
             'Поступил заказ на сумму '+str(self.total_price),
-            'orderer@mebelyes.store',
-            ['orders@mebelyes.store'],
+            'orders@mebelyes.store',
+            ['orders@mebelyes.store', 'dozor52@mail.ru'],
             fail_silently=False,
         )
 
     def save(self, *args, **kwargs):
-        #self.SendEmail()
+        self.SendEmail()
         super(Order, self).save(*args, **kwargs)
