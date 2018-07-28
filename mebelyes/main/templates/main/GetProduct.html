@@ -15,6 +15,9 @@
                         <h2 class="text-center">[[ name ]]</h2>
                     </div>
                     <hr>
+                    <div class="row py-0 my-0">
+                        <h5>Материал:</h5>
+                    </div>
                     <div class="row" id="material">
                         <div v-for="(mat, i) in materials" class="col-12 col-md-3 px-0">
                             <button type="button" class="btn btn-outline-secondary btn-block px-1" :name="i"
@@ -23,6 +26,9 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="row py-0 my-0">
+                        <h5>Размер:</h5>
+                    </div>
                     <div class="row" id="size">
                         <div v-for="(size, i) in sizes" class="col-12 col-md-3 px-0">
                             <button type="button" class="btn btn-outline-secondary btn-block px-1" :name="i"
@@ -31,10 +37,13 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="row py-0 my-0">
+                        <h5>Цвет:</h5>
+                    </div>
                     <div class="row " id="color">
                         <div v-for="(color, i) in colors" class="col-6 col-md-3 px-0">
                             <button type="button" class="btn btn-outline-secondary btn-block px-1" :name="i"
-                                    @click="toggle('color', i)">[[color]]
+                                    @click="toggle('color', i)" :style="'background-image: url(/static/api/colors/'+color+'.png); background-position: center'">[[color]]
                             </button>
                         </div>
                     </div>

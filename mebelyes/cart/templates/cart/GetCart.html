@@ -5,47 +5,49 @@
         window.cart = "{{ cart | safe }}";
         window.total_price = {{ total_price }};
     </script>
-    <div class="container-fluid" id="app">
-        <div class="row">
+    <div class="container-fluid" id="app" style="overflow-x: auto">
+        <div class="row" style="min-width: 900px;">
             <div class="col-12 col-lg-8 offset-lg-2 bg-white">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="table-responsive">
-                            {% csrf_token %}
-                            <div class="container-fluid table table-striped">
-                                <div class="row py-3 border">
-                                    <div class="col-2">Название</div>
-                                    <div class="col-2">Материал</div>
-                                    <div class="col-2">Цвет</div>
-                                    <div class="col-2">Размер</div>
-                                    <div class="col-2">Цена</div>
-                                    <div class="col-2"></div>
+                        {% csrf_token %}
+                        <div class="table table-striped">
+                            <div class="row py-3 border">
+                                <div class="col-2">Название</div>
+                                <div class="col-2">Материал</div>
+                                <div class="col-2">Цвет</div>
+                                <div class="col-2">Размер</div>
+                                <div class="col-2">Цена</div>
+                                <div class="col-2"></div>
+                            </div>
+                            <productincart v-for="prod in cart"
+                                           :id="prod.id"
+                                           :name="prod.name"
+                                           :material="prod.material"
+                                           :color="prod.color"
+                                           :size="prod.size"
+                                           :price="prod.price"
+                                           :services="prod.services"
+                            ></productincart>
+                            <div class="row py-4 border">
+                                <div class="col-2">
+                                    <button class="btn btn-block btn-outline-danger" @click="CleanCart">Очистить
+                                    </button>
                                 </div>
-                                <productincart v-for="prod in cart"
-                                    :id="prod.id"
-                                    :name="prod.name"
-                                    :material="prod.material"
-                                    :color="prod.color"
-                                    :size="prod.size"
-                                    :price="prod.price"
-                                    :services="prod.services"
-                                ></productincart>
-                                <div class="row py-4 border">
-                                    <div class="col-2"><button class="btn btn-block btn-outline-danger" @click="CleanCart">Очистить</button></div>
-                                    <div class="col-2"></div>
-                                    <div class="col-2"></div>
-                                    <div class="col-2">Цена:</div>
-                                    <div class="col-2">[[ total_price ]]</div>
-                                    <div class="col-2"></div>
-                                </div>
-                                <div class="row py-4 border">
-                                    <div class="col-2"></div>
-                                    <div class="col-2"></div>
-                                    <div class="col-2"></div>
-                                    <div class="col-2"></div>
-                                    <div class="col-3"><a href="{% url 'cart_order:New' %}" class="btn btn-block btn-outline-success">Оформить заказ</a></div>
-                                    <div class="col-1"></div>
-                                </div>
+                                <div class="col-2"></div>
+                                <div class="col-2"></div>
+                                <div class="col-2">Цена:</div>
+                                <div class="col-2">[[ total_price ]]</div>
+                                <div class="col-2"></div>
+                            </div>
+                            <div class="row py-4 border">
+                                <div class="col-2"></div>
+                                <div class="col-2"></div>
+                                <div class="col-2"></div>
+                                <div class="col-2"></div>
+                                <div class="col-3"><a href="{% url 'cart_order:New' %}"
+                                                      class="btn btn-block btn-outline-success">Оформить заказ</a></div>
+                                <div class="col-1"></div>
                             </div>
                         </div>
                     </div>
