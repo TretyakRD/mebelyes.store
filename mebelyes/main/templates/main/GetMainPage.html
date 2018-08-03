@@ -1,25 +1,50 @@
 {% extends "main/wrapper.html" %}
 {% block content %}
-{% load staticfiles %}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12 col-lg-6 offset-lg-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-5 mb-2 mb-lg-0 mb-xl-0">
-                        <a class="d-none d-lg-block d-xl-block" href="{% url 'main:GetCategory' 'shelf' %}"><img class="img-thumbnail img-hover" src="{% static 'main/img/shelf.png' %}" alt=""></a>
-                        <a class="d-lg-none d-xl-none " href="{% url 'main:GetCategory' 'shelf' %}"><img class="img-thumbnail img-hover" src="{% static 'main/img/shelf2.png' %}" alt=""></a>
+    {% load staticfiles %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 offset-lg-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-5 mb-2 mb-lg-0 mb-xl-0">
+                            <a href="{% url 'main:GetCategory' 'shelf' %}"><img class="img-thumbnail img-hover"
+                                                                                src="{% static 'main/img/shelf2.png' %}"
+                                                                                alt=""></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-7 mt-0 mt-lg-0 mt-xl-0 pl-md-5">
+                            <a href="{% url 'main:GetCategory' 'bed' %}"><img
+                                    class="img-thumbnail mb-2 mb-lg-5 mb-xl-5 img-hover"
+                                    src="{% static 'main/img/bed.png' %}" alt=""></a>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-lg-7 mt-2 mt-lg-0 mt-xl-0">
-                        <a href="{% url 'main:GetCategory' 'bed' %}"><img class="img-thumbnail mb-2 mb-lg-5 mb-xl-5 img-hover" src="{% static 'main/img/bed.png' %}" alt=""></a>
-                        <br class="d-none d-lg-block d-xl-block">
-                        <br class="d-none d-lg-block d-xl-block">
-                        <a href="{% url 'main:GetCategory' 'tahta' %}"><img class="img-thumbnail mt-2 mt-lg-5 mt-xl-5 img-hover" src="{% static 'main/img/tahta.png' %}" alt=""></a>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-4 mb-2 mb-lg-0 mb-xl-0">
+                            <a href="{% url 'main:GetCategory' 'curbstone' %}"><img class="img-thumbnail img-hover"
+                                                                                src="{% static 'main/img/curbstone.png' %}"
+                                                                                alt=""></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-8 mt-0 mt-lg-0 mt-xl-0 pl-md-5">
+                            <a href="{% url 'main:GetCategory' 'tahta' %}"><img
+                                    class="img-thumbnail mb-2 mb-lg-5 mb-xl-5 img-hover"
+                                    src="{% static 'main/img/tahta.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-4 mb-2 mb-lg-0 mb-xl-0">
+                            <a href="{% url 'main:GetCategory' 'commode' %}"><img class="img-thumbnail img-hover"
+                                                                                src="{% static 'main/img/commode.png' %}"
+                                                                                alt=""></a>
+                        </div>
+                        <div class="col-xs-12 col-lg-8 mt-0 mt-lg-0 mt-xl-0 pl-md-5">
+                            <a href="{% url 'main:GetCategory' 'childroom' %}"><img
+                                    class="img-thumbnail mb-2 mb-lg-5 mb-xl-5 img-hover"
+                                    src="{% static 'main/img/childroom.png' %}" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 {% endblock %}
