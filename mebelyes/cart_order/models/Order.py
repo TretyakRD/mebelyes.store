@@ -26,3 +26,4 @@ class Order(models.Model):
     def save(self, *args, **kwargs):
         self.SendEmail()
         super(Order, self).save(*args, **kwargs)
+
