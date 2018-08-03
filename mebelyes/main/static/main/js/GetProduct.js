@@ -97,6 +97,7 @@ vm = new Vue({
             let srcs_arr=[];
             window.addsrvc.forEach(el=>{if(el.active)srcs_arr.push(el.service.id)});
             if (this.price != 0) {
+                $('#add_button').html(`<img src="${window.loader_src}">`);
                 let csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
                 jQuery.post("/cart/add", {
                     csrfmiddlewaretoken: csrftoken,
@@ -109,12 +110,13 @@ vm = new Vue({
                     services: srcs_arr.toString(),
                 }, function (data) {
                     console.log(data);
+                    $('#add_button').delay(5000).text('В корзину');
                 });
             }
         },
     },
     created: function () {
-        let vm = this
+        let vm = this;
         fetch(window.get_url).then(function (response) {
             return response.json()
         }).then(function (data) {
