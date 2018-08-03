@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body{
+    background: url(../img/BG.png);
+    font-family: "Comfortaa";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+
+    -webkit-font-smoothing: antialiased;
+    -webtit-overflow-scrolling: touch;
+
+
+}
+
+a h5{
+    text-decoration: none;
+    color: #222!important;
+    font-weight: 600!important;
+}
+
+a h5:hover{
+    text-decoration: none;
+    color: #222!important;
+    font-weight: 600!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Comfortaa";
+    font-weight: 300;
+}
+h6{
+    font-size: 12px;
+    text-decoration: underline;
+    color: #7b7b7b;
+}
+
+.tc-w{
+    color:white;
+}
+
+.h5-p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+.btn-p{
+    font-weight: 100;
+    color: #222;
+    padding-right:20%;
+    padding-left:20%;
+}
+
+.bc-black{
+    border-color: black;
+}
+
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+a:hover, a:focus{
+    color: #7b7b7b;
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em, 0;
+    padding: 0;
+}
+
+.navbar-brand img{
+    width: 80px;
+}
+
+#menu{
+    background: rgba(43,43,43,0.83);
+}
+
+#footer{
+    background: rgba(43,43,43,0.83);
+}
+
+.left-space{
+    background: linear-gradient(to left, rgba(43,43,43,0.83), rgba(0,0,0,0));
+}
+
+.right-space{
+    background: linear-gradient(to right, rgba(43,43,43,0.83), rgba(0,0,0,0));
+}
+
+.centered{
+    text-align: center;
+}
+
+.social-icons {
+    padding: 15px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.social-icons:hover {
+    color: white;
+    background: #000;
+}
+
+.img-hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.500);
+    transition-duration: 0.2s;
+}
+
+.img-hover:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.45);
+}
+
+.cu-p{
+    cursor: pointer;
+}
+
+.i-3{
+    width: 27.333333333%;
+    margin: 3%;
+}
+.i-2{
+    width: 44%;
+    margin: 3%;
+}
+
+.d-ib{
+    display: inline-block;
+}

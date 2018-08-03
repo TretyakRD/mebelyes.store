@@ -1,16 +1,8 @@
 from django.http import HttpResponse
+from django.core.mail import EmailMessage
 
-from ..models.Product import Product
-from ..models.Service import Service
 
 def test(request):
-    items = Product.objects.filter(category='tahta')
-    serv = Service.objects.all()
-    iter = 0
-    for el in items:
-        iter += 1
-        for it in serv:
-            el.services.add(it)
-        el.save()
-    return HttpResponse(iter)
-
+    msg = EmailMessage('Request Callback', 'Here is the message.', 'orders@mebelyes.store', to=['orders@mebelyes.store'])
+    msg.send(fail_silently=False)
+    return HttpResponse('OK')

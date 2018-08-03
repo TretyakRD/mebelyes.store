@@ -125,7 +125,9 @@ USE_TZ = True
 EMAIL_HOST = 'smtp.beget.com'
 EMAIL_HOST_USER = 'orders@mebelyes.store'
 EMAIL_HOST_PASSWORD = '1aY&5j62'
-
+DEFAULT_FROM_EMAIL = 'orders@mebelyes.store'
+SERVER_EMAIL = 'orders@mebelyes.store'
+EMAIL_PORT = 2525
 STATIC_URL = '/static/'
 
 STATIC_ROOT = "./static"
