@@ -1,5 +1,6 @@
 {% extends "main/wrapper.html" %}
 {% block content %}
+
     {% load staticfiles %}
     <div class="container-fluid" id="app">
         <div class="row">
@@ -13,57 +14,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 col-md-6">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-12">
-                                                <label for="inputcountry">Страна</label>
-                                                <input required type="text" class="form-control" id="inputcountry"
-                                                       name="country" placeholder="Россия" v-model="country">
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-12">
-                                                <label for="inputcity">Город</label>
-                                                <input required type="text" class="form-control" id="inputcity"
-                                                       name="city"
-                                                       placeholder="Москва" v-model="city">
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-12">
-                                                <label for="inputstreet">Улица</label>
-                                                <input required type="text" class="form-control" id="inputstreet"
-                                                       name="street" placeholder="Моховая" v-model="street">
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-12">
-                                                <label for="inputstreet">Строение</label>
-                                                <input required type="text" class="form-control" id="inputbuilding"
-                                                       name="building" placeholder="34" v-model="building">
-                                            </div>
-                                        </div>
-                                        <div class="form-group centered">
-                                            <button class="btn btn-primary" @click="calc">Рассчитать</button>
-                                        </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <table class="table">
-                                        <thead>
-                                        <tr>
-                                            <th>КМ от МКАД</th>
-                                            <th>Цена за км от МКАД</th>
-                                            <th>Итого</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>[[ dist ]]</td>
-                                            <td>20 ₽</td>
-                                            <td>[[ 1000+dist*20 ]] ₽</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="col-12 p-5">
+                                    <div id="map" style="width: auto; height: 600px"></div>
                                 </div>
                             </div>
                         </div>
@@ -72,5 +24,6 @@
             </div>
         </div>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="{% static 'map/js/GetMap.js' %}"></script>
 {% endblock %}
