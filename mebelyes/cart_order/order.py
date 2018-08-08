@@ -5,7 +5,7 @@ def SrlzOrder(request):
     try:
         order.fullname = request.POST.get('lastname') + ' ' + request.POST.get('name') + ' ' + request.POST.get('patronymic')
         order.email = request.POST.get('email')
-        order.address = request.POST.get('country') + ' ' + request.POST.get('city') + ' ' + request.POST.get('street') + ' ' + request.POST.get('structure') + ' ' + request.POST.get('cell')
+        order.address = request.POST.get('address')
         order.tel = request.POST.get('tel')
         order.total_price = request.session['total_price']
         order.comments = request.POST.get('comments')
