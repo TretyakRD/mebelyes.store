@@ -130,4 +130,4 @@ SERVER_EMAIL = 'orders@mebelyes.store'
 EMAIL_PORT = 2525
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "./static"
+STATIC_ROOT = "../static"
