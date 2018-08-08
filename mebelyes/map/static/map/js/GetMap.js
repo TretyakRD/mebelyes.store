@@ -35,6 +35,7 @@ vm = new Vue({
             let routePanelControl = new ymaps.control.RoutePanel({
                 options: {
                     // Добавим заголовок панели.
+                    allowSwitch: false,
                     showHeader: true,
                     title: 'Расчёт доставки'
                 }
@@ -59,6 +60,8 @@ vm = new Vue({
                 fromEnabled: false,
                 from: 'Москва, Сверчков переулок, 8с1'
             });
+            console.log(routePanelControl.options.getAll());
+
 
             myMap.controls.add(routePanelControl).add(zoomControl);
 
